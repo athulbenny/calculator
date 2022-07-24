@@ -1,29 +1,82 @@
-var b=0;
 
-var btn1=document.getElementById('btn1');
-btn1.addEventListener('click',addvalue1)
-var btn2=document.getElementById('btn2');
-btn2.addEventListener('click',addvalue2)
-var btn3=document.getElementById('btn3');
-var btn4=document.getElementById('btn4');
-var btn5=document.getElementById('btn5');
-var btn6=document.getElementById('btn6');
-var btn7=document.getElementById('btn7');
-var btn8=document.getElementById('btn8');
-var btn9=document.getElementById('btn9');
-var btn0=document.getElementById('btn0');
-var num1=document.getElementById('num1');
+    var a=0,b=0;
+    var plus=document.getElementById('plus');
+    var subs=document.getElementById('subs');
+    var mult=document.getElementById('mult');
+    var divde=document.getElementById('divde');
+    var expn=document.getElementById('expn');
+    var clr=document.getElementById('clr');
+    var num1=document.getElementById('num1');
+    var num2=document.getElementById('num2');
+    plus.onclick=add;
+    subs.onclick=minus;
+    mult.onclick=prod;
+    divde.onclick=quot;
+    expn.onclick=power;
+    clr.onclick=clear;
 
-function addvalue1(){
-   var a=btn1.innerHTML;
-   a=parseInt(a)
-   b=(b*10)+a;
-   num1.value=b;
-}
-function addvalue2(){
-   var a=btn2.innerHTML;
-   a=parseInt(a)
-   b=b*10+a;
-   num1.value=b;
-}
-
+    function add(){
+         a=num1.value;
+         b=num2.value;
+        a=parseInt(a);
+        b=parseInt(b);
+        num1.value=a+b;
+        num1.style.backgroundColor='green'
+        num1.style.color='white'
+    }
+    function minus(){
+         a=num1.value;
+         b=num2.value;
+        a=parseInt(a);
+        b=parseInt(b);
+        num1.value=a-b;
+        num1.style.backgroundColor='green'
+        num1.style.color='white'
+    }
+    function prod(){
+         a=num1.value;
+         b=num2.value;
+        a=parseInt(a);
+        b=parseInt(b);
+        num1.value=a*b;
+        num1.style.backgroundColor='green'
+        num1.style.color='white'
+    }
+    function quot(){
+         a=num1.value;
+         b=num2.value;
+        a=parseInt(a);
+        b=parseInt(b);
+        num1.value=a/b;
+        num1.style.backgroundColor='green'
+        num1.style.color='white'
+    }
+    function power(){
+         a=num1.value;
+         b=num2.value;
+        a=parseInt(a);
+        b=parseInt(b);
+        num1.value=a**b;
+        num1.style.backgroundColor='green'
+        num1.style.color='white'
+    }
+    function clear(){
+       num1.value=''
+       num2.value='' 
+       num1.style.backgroundColor=''
+        num1.style.color=''
+    }
+const d=new Date();var c=1
+var h=document.getElementById('clock');
+var hr=d.getHours();
+var mn=d.getMinutes();
+var sc=d.getSeconds();
+setInterval(()=>{
+    h.innerHTML=(hr%12)+':'+mn+":"+sc;
+    sc++;
+    if(sc==60){
+        mn++;
+    }if(mn==60){
+        hr++;
+    }
+    },1000)

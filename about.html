@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc_about</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="" id="clock"></a>
+        <a href="./index.html">home</a>
+        <a href="">about</a>
+        <a href="">help</a>
+        <a href="">contact</a>
+    </div>
+    <div>
+        <h1 style="color:aliceblue ; text-align:center">CALCULATOR</h1>
+        <p><b>CALCULATOR </b> conatins two input regions. You can type input and click any opertor for performing concerned operation</p>
+    </div>
+</body>
+<script>
+    const d=new Date();
+var h=document.getElementById('clock');
+var hr=d.getHours();
+var mn=d.getMinutes();
+var sc=d.getSeconds();
+setInterval(()=>{
+    h.innerHTML=(hr%12)+':'+mn+":"+sc;
+    sc++;
+    if(sc==60){
+        mn++;
+    }if(mn==60){
+        hr++;
+    }
+    },1000)
+</script>
+</html>
