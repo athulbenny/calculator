@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    /* margin-left: 10px; */
+padding: 0%;
+}
+#container{
+    align-items: center;
+    /* gap: 24px; */
+}
+
+.btn{
+    /* box-sizing: border-box; */
+    background-color: aliceblue;
+color: blue;
+
+min-height: 50px;
+min-width: 35px;
+    }
+
+#num1{
+    text-align: center;
+    padding: 20px 0;
+    
+    border: solid black;
+}
