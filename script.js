@@ -75,8 +75,8 @@ setInterval(()=>{
     h.innerHTML=(hr%12)+':'+mn+":"+sc;
     sc++;
     if(sc==60){
-        mn++;
+        mn++;sc=0;
     }if(mn==60){
-        hr++;
+        hr++;mn=0;
     }
     },1000)
