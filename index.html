@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">
@@ -20,24 +20,39 @@
     
     <div id="container">
         <div>
-            <input type="number" class="num" name="num1" id="num1" placeholder="NUMBER">
+            <input class="num" name="num1" id="num1" placeholder="NUMBER">
         </div>
         <div>
-            <input type="number" class="num" name="num2" id="num2" placeholder="NUMBER">
+            <input class="num" name="num2" id="num2" placeholder="NUMBER">
         </div> 
-        <div>
-            <button class="btn" id="plus">+</button>
-            <button class="btn" id="subs">-</button>
-            <button class="btn" id="mult">*</button>
-            <button class="btn" id="divde">/</button>
-            <button class="btn" id="expn">^</button>
-            <button class="btn" id="clr">c</button>
-        </div>
+            <div class="row" id="row1">
+                <button class="btn" id="btn1">1</button>
+                <button class="btn" id="btn2">2</button>
+                <button class="btn" id="btn3">3</button>
+                <button class="btn" id="plus">+</button>
+            </div>
+            <div class="row" id="row2">
+                <button class="btn" id="btn4">4</button>
+                <button class="btn" id="btn5">5</button>
+                <button class="btn" id="btn6">6</button>
+                <button class="btn" id="subs">-</button>
+            </div>
+            <div class="row" id="row3">
+                <button class="btn" id="btn7">7</button>
+                <button class="btn" id="btn8">8</button>
+                <button class="btn" id="btn9">9</button>
+                <button class="btn" id="mult">*</button>
+            </div>
+            <div class="row" id="row4">
+                <button class="btn" id="clr">c</button>
+                <button class="btn" id="btn0">0</button>
+                <button class="btn" id="divde">/</button>
+                <button class="btn" id="equl">=</button>
+            </div>
           
     </div>
     <div>
         <p id="footer">TO KNOW ABOUT CALCULATOR VISIT <a href="./about.html">about</a></p>
     </div>
 </body>
-
 </html>

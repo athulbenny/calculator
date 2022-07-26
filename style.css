@@ -27,7 +27,12 @@
     text-align: center;
     max-width: 200px;
     border: 0.10rem solid black;
+    color: gold;
 
+}
+.row{
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
 }
 
 .btn{
@@ -38,11 +43,13 @@
     background-color: blue;
     color: white;
     gap: 50x;
+    max-width: 50px;
 }
 
 #footer{
     position: absolute;
-    top: 85%;
+    color: darkgoldenrod;
+    top: 95%;
 }
 
 a{
