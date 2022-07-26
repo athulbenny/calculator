@@ -164,6 +164,7 @@ var hr=d.getHours();
 var mn=d.getMinutes();
 var sc=d.getSeconds();
 setInterval(()=>{
+<<<<<<< HEAD
 h.innerHTML=(hr%12)+':'+mn+":"+sc;
 sc++;
 if(sc==60){
@@ -172,3 +173,13 @@ if(sc==60){
     hr++;mn=0
 }
 },1000)
+=======
+    h.innerHTML=(hr%12)+':'+mn+":"+sc;
+    sc++;
+    if(sc==60){
+        mn++;sc=0;
+    }if(mn==60){
+        hr++;mn=0;
+    }
+    },1000)
+>>>>>>> e34ec08819c8083c82ab3d51a6543cc4302947de
